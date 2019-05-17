@@ -11,7 +11,6 @@ import com.yjfei.mind.entity.node.portfolio.CreativeTag;
 import com.yjfei.mind.entity.node.portfolio.EmotionTag;
 import com.yjfei.mind.entity.node.portfolio.VisualTag;
 import com.yjfei.mind.entity.ref.Relate;
-import com.tezign.mind.repository.*;
 import com.yjfei.mind.util.ConvertUtil;
 import com.yjfei.mind.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;

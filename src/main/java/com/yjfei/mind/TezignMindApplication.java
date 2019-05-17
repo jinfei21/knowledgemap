@@ -10,8 +10,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@EnableNeo4jRepositories(basePackages = "com.tezign.mind.repository")
-@EntityScan(basePackages = "com.tezign.mind.entity")
+@EnableNeo4jRepositories(basePackages = "com.yjfei.mind.repository")
+@EntityScan(basePackages = "com.yjfei.mind.entity")
 @EnableSwagger2
 public class TezignMindApplication {
 

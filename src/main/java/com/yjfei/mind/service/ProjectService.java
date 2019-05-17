@@ -5,7 +5,6 @@ import com.yjfei.mind.data.Project;
 import com.yjfei.mind.entity.node.ProjectEntity;
 import com.yjfei.mind.entity.node.project.*;
 import com.yjfei.mind.entity.ref.Relate;
-import com.tezign.mind.repository.*;
 import com.yjfei.mind.util.ConvertUtil;
 import com.yjfei.mind.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
