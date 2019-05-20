@@ -9,12 +9,15 @@ public interface RelateRepository extends Neo4jRepository<Relate, Long> {
 
 
 
+    @Query("MATCH(:Supplier{sid:{startId}})-[r:REF]->(:Portfolio{eid:{endId}}) return r")
+    Relate findSupplierToPortfolioRelate(@Param("startId") Long startId, @Param("endId") Long endId);
 
-    @Query("MERGE({id:{relate}.startNode.id})-[r:REF{ name:{relate}.name}]->({id:{relate}.endNode.id}) return r")
-    Relate addRelate(@Param("relate") Relate relate);
+
+    @Query("MATCH(:Supplier{sid:{startId}})-[r:REF]->(:Project{pid:{endId}}) return r")
+    Relate findSupplierToProjectRelate(@Param("startId") Long startId, @Param("endId") Long endId);
 
 
-    @Query("MERGE({id:{startId}})-[r:REF]->({ id:{endId}}) return r")
-    Relate findRelate(@Param("startId") Long startId, @Param("endId") Long endId);
+    @Query("MATCH(:Portfolio{eid:{startId}})-[r:REF]->(:Project{pid:{endId}}) return r")
+    Relate findPortfolioToProjectRelate(@Param("startId") Long startId, @Param("endId") Long endId);
 
 }
