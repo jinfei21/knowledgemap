@@ -22,7 +22,7 @@ public class SwaggerConfiguration {
                 // 是否开启
                 .enable(true).select()
                 // 扫描的路径包
-                .apis(RequestHandlerSelectors.basePackage("com.tezign.mind"))
+                .apis(RequestHandlerSelectors.basePackage("com.yjfei.mind"))
                 // 指定路径处理PathSelectors.any()代表所有的路径
                 .paths(PathSelectors.any()).build().pathMapping("/");
     }
@@ -32,7 +32,7 @@ public class SwaggerConfiguration {
                 .title("Tezign mind Api ")
                 .description("tezign mind")
                 // 作者信息
-                .contact(new Contact("mind", "https://mind.tezign.com", "feiyongjun@tezign.com"))
+                .contact(new Contact("mind", "https://mind.yjfei.com", "feiyongjun@yjfei.com"))
                 .version("1.0.0")
                 .build();
     }
