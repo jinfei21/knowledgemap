@@ -29,8 +29,8 @@ public class SwaggerConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Tezign mind Api ")
-                .description("tezign mind")
+                .title("yjfei mind Api ")
+                .description("yjfei mind")
                 // 作者信息
                 .contact(new Contact("mind", "https://mind.yjfei.com", "feiyongjun@yjfei.com"))
                 .version("1.0.0")
